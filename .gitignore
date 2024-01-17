@@ -36,4 +36,4 @@ yarn-error.log*
 next-env.d.ts
 
 /public/*.png
-./src/app/constants.tsx
+/src/app/_constants/
