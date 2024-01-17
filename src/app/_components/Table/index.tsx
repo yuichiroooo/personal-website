@@ -1,4 +1,5 @@
 import { Researches } from "@/app/_constants/constants"
+import { FaFilePdf } from "react-icons/fa"
 import {
     Card,
     CardContent,
@@ -18,7 +19,10 @@ export default function Table() {
                         <CardContent>
                             <p>{value.authors}</p>
                             <p>{value.conference}, {value.year}</p>
-                            <a href={value.pageUrl} className="underline" target="_blank" rel="noopener noreferrer">[Paper]</a>
+                            <div className="flex">
+                                <FaFilePdf className="mt-1" />
+                                <a href={value.pageUrl} className="underline" target="_blank" rel="noopener noreferrer">Paper</a>
+                            </div>
                         </CardContent>
                     </Card>
                 </div>
