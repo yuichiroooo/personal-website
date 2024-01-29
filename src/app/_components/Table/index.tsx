@@ -10,7 +10,7 @@ import {
 export default function Table() {
     return (
         <main>
-            <div className="pt-10">
+            <div className="pt-10 pb-5">
                 {Researches.map((value, index) => (
                     <div key={index} className="flex justify-center mt-5">
                         <Card className="w-1/2">
